@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style type="text/css"> html, body {
+        <style type="text/css"> 
+        html, body {
             width: 90%;
             height: 90%;
             }
@@ -241,15 +242,23 @@
         
         @-webkit-keyframes spin-right {
           100% {
-              -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
           }
         }
         
         @-moz-keyframes spin-right {
             100% {
-                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
             }
-        } </style>
+        }
+        
+        @keyframes spin-right {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        </style>
         <title> Solar System</title>
         <link rel="stylesheet" href="css"/>
     </head>
@@ -272,7 +281,7 @@
         </div>
         
          <div class ="body" id="mars-orbit">
-            <img class ="body" id="mars" src="http://vedicartandscience.com/wp-content/uploads/2011/08/mars-planet1.jpg">
+            <img class ="body" id="mars" src="C:\Users\cools\OneDrive\Desktop\Folder\Projects\Solar_System_Project\OSIRIS_Mars_true_color.jpg">
         </div>
         
         <div class ="body" id="jupiter-orbit">
