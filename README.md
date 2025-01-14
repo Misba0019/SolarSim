@@ -10,3 +10,9 @@ This project simulates the solar system with orbiting planets using HTML, CSS, a
 ## Technologies Used
 - HTML
 - CSS (Inbuilt)
+
+## Credits
+Images: Pixabay (pixabay.com)
+
+## License
+This project is licensed under the MIT License - see the LICENSE text file for details.
