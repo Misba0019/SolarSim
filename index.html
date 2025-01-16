@@ -1,308 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style type="text/css"> 
-        html, body {
-            width: 90%;
-            height: 90%;
-            }
-        
-        .body {
-            position: absolute;
-            
-        }
-        
-        #sun {
-            /* in the middle of the box */
-            top: 50%;
-            left: 50%;
-            
-            border-radius: 50%;
-            background-color: orangered;
-            
-            
-            height: 100px;
-            width: 100px;
-            margin-top: -40.5px; 
-            margin-left: -45.5px;
-        }
-        
-        #earth {
-            top: 0%;
-            left: 50%;
-            
-            border-radius:100%;
-            height: 37.5px;
-            width: 37.5px;
-            margin-top: -18.75px;
-            margin-left: -18.75px;
-            background-color:  blue;
-        }
-        
-        #earth-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 500px;
-            height: 500px;
-            margin-left: -250px;
-            margin-top: -250px;
-           
-            
-            -webkit-animation: spin-right 10s linear infinite;
-            -moz-animation: spin-right 10s linear infinite;
-            animation: spin-right 10s linear infinite;
-        }
-          
-        #mercury {
-            top: 0%;
-            left: 50%;
-            
-            
-            border-radius:100%;
-            height: 21px;
-            width: 21px;
-            margin-top: -11.25px;
-            margin-left: -11.25px;
-        }
-        
-        #mercury-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 200px;
-            height: 200px;
-            margin-top: -100px;
-            margin-left: -100px;
-        
-            -webkit-animation: spin-right 3.5s linear infinite;
-            -moz-animation: spin-right 3.5s linear infinite;
-            animation: spin-right 3.5s linear infinite;
-          }
-        
-        #venus {
-            top: 0%;
-            left: 50%;
-            
-            border-radius:100%;
-            height: 35px;
-            width: 35px;
-            margin-top: -18.75px;
-            margin-left: -18.75px;
-            
-            }
-        
-        #venus-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 350px;
-            height: 350px;
-            margin-left: -175px;
-            margin-top: -175px;
-            
-            -webkit-animation: spin-right 7s linear infinite;
-            -moz-animation: spin-right 7s linear infinite;
-            animation: spin-right 7s linear infinite;
-        }
-        
-        #mars {
-            
-            top: 0%;
-            left: 50%;
-            
-            border-radius:100%;
-            height: 26.25px;
-            width: 26.25px;
-            margin-top: -13.13px;
-            margin-left: -13.13px;
-        }
-        
-        #mars-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 750px;
-            height: 750px;
-            margin-left: -375px;
-            margin-top: -375px;
-           
-            -webkit-animation: spin-right 14s linear infinite;
-            -moz-animation: spin-right 14s linear infinite;
-            animation: spin-right 14s linear infinite;
-        }
-        
-        #jupiter {
-            top: 0%;
-            left: 50%;
-            
-            border-radius:100%;
-            height: 70px;
-            width: 70px;
-            margin-top: -35px;
-            margin-left: -35px;
-            
-            object-fit: cover;
-            object-position: center;
-        }
-        
-        #jupiter-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 1200px;
-            height: 1200px;
-            margin-left: -450px;
-            margin-top: -450px;
-           
-            
-            -webkit-animation: spin-right 18s linear infinite;
-            -moz-animation: spin-right 18s linear infinite;
-            animation: spin-right 18s linear infinite;
-        }
-        
-        #saturn {
-            top: 0%;
-            left: 50%;
-            
-            border-radius:100%;
-            height: 65px;
-            width: 65px;
-            margin-top: -32.5px;
-            margin-left: -32.5px;
-            object-fit: cover;
 
-        }
-        
-        #saturn-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 1400px;
-            height: 1400px;
-            margin-left: -550px;
-            margin-top: -550px;
-           
-            
-            -webkit-animation: spin-right 20s linear infinite;
-            -moz-animation: spin-right 20s linear infinite;
-            animation: spin-right 20s linear infinite;
-        }
-        
-        #uranus {
-            top: 0%;
-            left: 50%;
-        
-            border-radius:100%;    
-            height: 50px;
-            width: 50px;
-            margin-top: -25px;
-            margin-left: -25px;
-            object-fit: cover;
-           
-        }
-        
-        #uranus-orbit {
-            top: 50%;
-            left: 50%;
-            
-            width: 1600px;
-            height: 1600px;
-            margin-left: -650px;
-            margin-top: -650px;
-           
-            
-            -webkit-animation: spin-right 22s linear infinite;
-            -moz-animation: spin-right 22s linear infinite;
-            animation: spin-right 22s linear infinite;
-        }
-        
-        #neptune {
-            top: 0%;
-            left: 50%;
-            
-            border-radius:100%;
-            height: 45px;
-            width: 45px;
-            margin-top: -22.5px;
-            margin-left: -22.5px;
-        }
-        
-        #neptune-orbit {
-            top: 50%;
-            left: 50%;
-        
-            width: 1800px;
-            height: 1800px;
-            margin-left: -750px;
-            margin-top: -750px;
-           
-            
-            -webkit-animation: spin-right 27s linear infinite;
-            -moz-animation: spin-right 27s linear infinite;
-            animation: spin-right 27s linear infinite;
-        }
-        
-        
-        @-webkit-keyframes spin-right {
-          100% {
-              transform: rotate(360deg);
-          }
-        }
-        
-        @-moz-keyframes spin-right {
-            100% {
-                -moz-transform: rotate(360deg);
-            }
-        }
-        
-        @keyframes spin-right {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
+<head>
+    <title> Solar System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        </style>
-        <title> Solar System</title>
-        <link rel="stylesheet" href="css"/>
-    </head>
-    
-    
-    <body background="https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_1280.jpg"> //credits- Pixabay
-        
-        <img class ="body" id="sun" src="https://cdn.pixabay.com/photo/2012/01/09/09/10/sun-11582_1280.jpg">
-        
-        <div class ="body" id="mercury-orbit">
-            <img class ="body" id="mercury" src="https://cdn.pixabay.com/photo/2012/01/09/09/33/mercury-11591_1280.png">
+<body>
+    <div id="container">
+            <img class="planetImg" id="sun" src="https://cdn.pixabay.com/photo/2012/01/09/09/10/sun-11582_1280.jpg">
+
+        <div class="body" id="mercury-orbit">
+            <img class="planetImg" id="mercury"
+                src="https://cdn.pixabay.com/photo/2012/01/09/09/33/mercury-11591_1280.png">
         </div>
-        
-        <div class ="body" id="venus-orbit">
-            <img class ="body" id="venus" src="https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_1280.jpg">
+
+        <div class="body" id="venus-orbit">
+            <img class="planetImg" id="venus"
+                src="https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_1280.jpg">
         </div>
-        
-        <div class ="body" id="earth-orbit">        
-            <img class ="body" id="earth" src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_1280.jpg">
+
+        <div class="body" id="earth-orbit">
+            <img class="planetImg" id="earth"
+                src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11009_1280.jpg">
         </div>
-        
-         <div class ="body" id="mars-orbit">
-            <img class ="body" id="mars" src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg">
+
+        <div class="body" id="mars-orbit">
+            <img class="planetImg" id="mars"
+                src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg">
         </div>
-        
-        <div class ="body" id="jupiter-orbit">
-            <img class ="body" id="jupiter" src="https://cdn.pixabay.com/photo/2023/07/16/12/22/jupiter-8130601_1280.jpg">
+
+        <div class="body" id="jupiter-orbit">
+            <img class="planetImg" id="jupiter"
+                src="https://cdn.pixabay.com/photo/2021/10/14/12/02/jupiter-6708922_1280.jpg">
         </div>
-        
-        <div class ="body" id="saturn-orbit">
-            <img class ="body" id="saturn" src="https://cdn.pixabay.com/photo/2020/06/03/13/56/saturn-5255043_960_720.jpg">
+
+        <div class="body" id="saturn-orbit">
+            <img class="planetImg" id="saturn"
+                src="https://cdn.pixabay.com/photo/2020/06/03/13/56/saturn-5255043_960_720.jpg">
         </div>
-        
-        <div class ="body" id="uranus-orbit">
-            <img class ="body" id="uranus" src="https://cdn.pixabay.com/photo/2020/09/10/01/58/uranus-5559037_1280.jpg">
+
+        <div class="body" id="uranus-orbit">
+            <img class="planetImg" id="uranus"
+                src="https://cdn.pixabay.com/photo/2024/08/08/09/31/planet-8954037_1280.jpg">
         </div>
-        
-        <div class ="body" id="neptune-orbit">
-            <img class ="body" id="neptune" src="https://cdn.pixabay.com/photo/2020/09/13/17/38/neptune-5568916_1280.png">
+
+        <div class="body" id="neptune-orbit">
+            <img class="planetImg" id="neptune"
+                src="https://cdn.pixabay.com/photo/2024/08/08/09/30/neptune-8954034_960_720.jpg">
         </div>
-    
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
