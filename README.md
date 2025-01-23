@@ -22,7 +22,7 @@ Images: Pixabay (pixabay.com)
 
 2. **Navigate to the project directory:**
     ```bash
-    cd museum-of-candy
+    cd Solar-System-Project
     ```
 
 3. **Open the `index.html` file in your preferred web browser.**
