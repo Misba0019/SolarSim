@@ -14,5 +14,18 @@ This project simulates the solar system with orbiting planets using HTML, CSS, a
 ## Credits
 Images: Pixabay (pixabay.com)
 
+## To run this project locally, follow these steps:
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/Misba0019/Solar-System-Project.git
+    ```
+
+2. **Navigate to the project directory:**
+    ```bash
+    cd museum-of-candy
+    ```
+
+3. **Open the `index.html` file in your preferred web browser.**
+
 ## License
 This project is licensed under the MIT License - see the LICENSE text file for details.
