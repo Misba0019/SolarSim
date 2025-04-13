@@ -28,4 +28,4 @@ Images: Pixabay (pixabay.com)
 3. **Open the `index.html` file in your preferred web browser.**
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
