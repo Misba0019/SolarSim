@@ -12,7 +12,7 @@ This project simulates the solar system with orbiting planets using HTML, CSS, a
 - CSS (Inbuilt)
 
 ## Credits
-Images: [Pixabay](pixabay.com)
+Images: [pixabay](pixabay.com)
 
 ## To run this project locally, follow these steps:
 1. **Clone the repository:**
