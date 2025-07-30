@@ -1,6 +1,6 @@
 # 🌞 SolarSim
 
-**SolarSim** is a visually rich and educational simulation of our solar system, built entirely with **HTML** and **CSS**. 
+**SolarSim** is a visually rich and educational simulation of our solar system, built entirely with **HTML** and **CSS**.  
 It features animated planetary orbits, realistic planet scaling, and a space-themed background — ideal for learning and demonstrating CSS animations and layout techniques.
 
 ---
@@ -24,9 +24,7 @@ It features animated planetary orbits, realistic planet scaling, and a space-the
 
 ---
 
-## Screenshot
-
-### SolarSim Preview
+## SolarSim Preview
 ![Solar Preview](/screenshots/solarsim-preview.png)
 
 ---
